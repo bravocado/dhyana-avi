@@ -88,8 +88,6 @@
 
 ready(function () {
 
-	console.log('document ready');
-
 	if (document.querySelector('.mydivclass') !== null) {
 		console.log('ada');
 	} else {

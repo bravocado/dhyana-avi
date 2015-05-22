@@ -1,9 +1,12 @@
 adapter: sftp
-host: bravocado.co
+host: mtbrv
 username: bravocado.co
 path: domains/projects.bravocado.co/html/dhyanaavi
 
 exclude:
-	- .gitignore
-	- dandelion.yml
-	- build/
+    - .gitignore
+    - dandelion.yml
+    - build/
+    - bower.json
+    - bower_components/
+    - config.codekit
