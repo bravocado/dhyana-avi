@@ -1,13 +1,17 @@
 {
-	"name": "dhyanaavi",
-	"main": "dist/",
-	"ignore": [
-	"_*",
-	".*"
-	],
-	"dependencies": {
-		"bootstrap-sass": "~3.3.4",
-		"gsap": "~1.16.1",
-		"components-modernizr": "latest"
-	}
+  "name": "dhyanaavi",
+  "main": "dist/",
+  "ignore": [
+    "_*",
+    ".*"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "gsap": "~1.16.1",
+    "components-modernizr": "latest",
+    "gerobak": "~0.1.5",
+    "classie": "~1.0.1",
+    "sass-mediaqueries": "~1.5.1",
+    "vivus": "~0.2.1"
+  }
 }

@@ -1,0 +1,38 @@
+$contrast-dark-default: #000 !default;
+$contrast-light-default: #fff !default;
+$contrast-threshold: 128 !default;
+$contrast-debug: false !default;
+
+@function contrast-is-light(
+  $color,
+  $threshold: $contrast-threshold
+) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  $yiq: (($red*299)+($green*587)+($blue*114))/1000;
+
+  //@if $yiq-debug { @debug $yiq, $threshold; }
+
+  @return if($yiq >= $threshold, true, false);
+}
+
+@function contrast-color(
+  $color,
+  $dark: $contrast-dark-default,
+  $light: $contrast-light-default,
+  $threshold: $contrast-threshold
+) {
+  @return if(contrast-is-light($color, $threshold), $contrast-dark-default, $contrast-light-default);
+}
+
+@mixin contrast(
+  $background-color,
+  $dark: $contrast-dark-default,
+  $light: $contrast-light-default,
+  $threshold: $contrast-threshold
+) {
+  background-color: $background-color;
+  color: contrast-color($background-color, $dark, $light, $threshold);
+}

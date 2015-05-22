@@ -1,0 +1,63 @@
+body {
+	@include contrast(#000);
+}
+
+.titleContainer {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 40px;
+	text-align: center;
+	svg {
+		width: 100%;
+		height: auto;
+	}
+	#title {
+		margin-top: -60px;
+	}
+	#bottomline {
+		margin-top: -60px;
+		width: 55%;
+	}
+}
+
+
+/*=====================================
+=            MEDIA QUERIES            =
+=====================================*/
+
+
+/*==========  DESKTOP  ==========*/
+
+
+
+/*==========  TABLE  ==========*/
+@include ipad {
+	.titleContainer {
+		width: 90%;
+		padding-top: 20px;
+		#bottomline {
+			width: 70%;
+			margin: -66px 0 auto;
+		}
+	}
+}
+
+
+
+/*==========  PHONE  ==========*/
+@include iphone4 {
+	.titleContainer {
+		width: 95%;
+		#title {
+			margin-top: -80px;
+			margin-bottom: -20px;
+		}
+		#bottomline {
+			margin-top: -76px;
+		}
+	}
+}
+
+/*-----  End of MEDIA QUERIES  ------*/
+

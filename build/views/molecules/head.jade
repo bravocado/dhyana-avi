@@ -8,29 +8,23 @@ block head
 
 // Add to homescreen for Chrome on Android
 meta(name='mobile-web-app-capable' content='yes')
-link(rel='icon', size='192x192', href='./images/ico/chrome-touch-icon-192x192.png')
+link(rel='icon', size='192x192', href='images/ico/chrome-touch-icon-192x192.png')
 
 // Add to homescreen for Safari on iOS
 meta(name='apple-mobile-web-app-capable', content='yes')
 meta(name='apple-mobile-web-app-status-bar-style', content='black')
 meta(name='apple-mobile-web-app-status-bar-style', content='Default Title')
-link(rel='apple-touch-icon-precomposed', href='./images/ico/apple-touch-icon-precomposed.png')
+link(rel='apple-touch-icon-precomposed', href='images/ico/apple-touch-icon-precomposed.png')
 
 // Tile icon for Win8 (144x144 + tile color)
-meta(name='msapplication-TileImage', content='./images/ico/ms-touch-icon-144x144-precomposed.png')
+meta(name='msapplication-TileImage', content='images/ico/ms-touch-icon-144x144-precomposed.png')
 meta(name='msapplication-TileColor', content='#3372DF')
 
-link(rel='stylesheet', href='./css/bootstrap.min.css', type='text/css' )
-link(rel='stylesheet', href='./css/style.min.css', type='text/css' )
+link(rel='stylesheet', href='css/bootstrap.min.css', type='text/css' )
+link(rel='stylesheet', href='css/style.min.css', type='text/css' )
 
-script(type='text/javascript' src='./scripts/loader.min.js' async defer)
+script(type='text/javascript' src='scripts/gerobak.min.js' async defer)
 
-script(gerobak-load='./scripts/amd.min.js')
-script(gerobak-load='./scripts/vendor.min.js')
-script(gerobak-load='./scripts/gerobak.settings.min.js')
-script(gerobak-load='./scripts/gerobak.extend.min.js')
-
-// extending the gerobak again!
-// load each package in with promises
-// after the package loaded, the tag contained with "gerobak-package" will removed
-//- script(gerobak-package='plugin')
+script(gerobak-load='scripts/vendor.min.js')
+script(gerobak-load='scripts/animator.min.js')
+script(gerobak-load='scripts/init.min.js')

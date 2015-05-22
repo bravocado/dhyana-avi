@@ -1,0 +1,8 @@
+svg * {
+	fill-opacity: 0;
+	transition: fill-opacity 1s;
+}
+
+svg.finished * {
+	fill-opacity: 1;
+}
