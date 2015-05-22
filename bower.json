@@ -1,0 +1,13 @@
+{
+	"name": "dhyanaavi",
+	"main": "dist/",
+	"ignore": [
+	"_*",
+	".*"
+	],
+	"dependencies": {
+		"bootstrap-sass": "~3.3.4",
+		"gsap": "~1.16.1",
+		"components-modernizr": "latest"
+	}
+}

@@ -1,0 +1,9 @@
+adapter: sftp
+host: bravocado.co
+username: bravocado.co
+path: domains/projects.bravocado.co/html/dhyanaavi
+
+exclude:
+	- .gitignore
+	- dandelion.yml
+	- build/
