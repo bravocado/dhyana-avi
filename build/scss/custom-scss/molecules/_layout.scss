@@ -1,5 +1,8 @@
 body {
 	@include contrast(#000);
+	.content {
+		display: none;
+	}
 }
 
 .titleContainer {
