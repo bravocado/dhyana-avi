@@ -54,3 +54,5 @@ tmp
 npm-debug.log
 build/sass/.sass-cache
 build/sass/.sass_cache
+build/scss/.sass-cache
+build/scss/.sass_cache
