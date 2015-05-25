@@ -74,6 +74,18 @@ body {
 
 
 /*==========  PHONE  ==========*/
+
+@include max-screen(768px) {
+	#contentAnimation {
+		margin-top: 20px;
+	}
+
+	#placeAnimation {
+		margin-top: 20px;
+	}
+}
+
+
 @include max-screen(400px) {
 	.titleContainer {
 		width: 95%;

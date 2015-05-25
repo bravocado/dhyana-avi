@@ -30,7 +30,8 @@ $(document).ready(function() {
 	/*==========  ANIMATOR  ==========*/
 	
 	var
-		titlePath = $('.titleContainer path')
+		titleContainer = $('.titleContainer')
+		,titlePath = $('.titleContainer path')
 		,contentAnimator = $('#contentAnimation > .animation')
 		,placeAnimator = $('#placeAnimation > .animation')
 		,titleTimline = new TimelineMax()
@@ -48,6 +49,7 @@ $(document).ready(function() {
 
 	function titleAnimation() {
 		titleTimline.add([
+			TweenLite.to(titleContainer, 1,{top:150,ease:Back.easeOut}),
 			TweenLite.to(titlePath.eq(0), 2, {
 				strokeDashoffset: 0,
 				delay: 0,
@@ -118,6 +120,7 @@ $(document).ready(function() {
 	//var tn1 = new TweenMax.staggerFrom(contentAnimator, 1, {autoAlpha:0, top:100, ease:Back.easeOut, paused:true}, 1);
 	function contentAnimation() {
 		//$.each(tn1, function(){this.play();})
+		TweenLite.to(titleContainer, 1,{top:0,ease:Back.easeOut}),
 		$.each(contentAnimator, function() {
 			contentTimeline.fromTo($(this), 1,{autoAlpha:0, top:100}, {display: 'block', autoAlpha:1, top:0, ease:Back.easeOut});
 		});
