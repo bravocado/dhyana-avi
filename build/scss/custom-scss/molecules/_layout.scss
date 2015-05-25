@@ -32,6 +32,23 @@ body {
 	}
 }
 
+#contentAnimation,#placeAnimation {
+	.animation {
+		position: relative;
+		display: none;
+		visibility: hidden;
+	}
+}
+
+#contentAnimation {
+	margin-top: 50px;
+}
+
+#placeAnimation {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
 
 /*=====================================
 =            MEDIA QUERIES            =
