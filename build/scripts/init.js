@@ -142,6 +142,15 @@ ready(function () {
 			obj.el.classList.add('finished');
 	});
 
+	new Vivus('bottomdecor', {
+		type: 'delayed',
+		duration: 100,
+		pathTimingFunction: Vivus.LINEAR
+	},
+		function doDone(obj) {
+			obj.el.classList.add('finished');
+	});
+
 });
 // end ready
 

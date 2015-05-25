@@ -9,10 +9,12 @@ body {
 	width: 50%;
 	height: auto;
 	margin: 0 auto;
+	margin-bottom: 30px;
 	padding-top: 40px;
 	text-align: center;
+	position: relative;
 	svg {
-		width: 100%;
+		max-width: 100%;
 		height: auto;
 	}
 	#title {
@@ -21,6 +23,12 @@ body {
 	#bottomline {
 		margin-top: -60px;
 		width: 55%;
+	}
+	#bottomdecor {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
 	}
 }
 
@@ -49,7 +57,7 @@ body {
 
 
 /*==========  PHONE  ==========*/
-@include iphone4 {
+@include max-screen(400px) {
 	.titleContainer {
 		width: 95%;
 		#title {
@@ -59,7 +67,50 @@ body {
 		#bottomline {
 			margin-top: -76px;
 		}
+		#bottomdecor {
+			display: none;
+			visibility: hidden;
+		}
 	}
+}
+
+@include screen(401px, 600px) {
+	.titleContainer {
+		width: 95%;
+		#title {
+			margin-top: -70px;
+			margin-bottom: -20px;
+		}
+		#bottomline {
+			margin-top: -76px;
+		}
+		#bottomdecor {
+			display: none;
+			visibility: hidden;
+		}
+	}
+}
+
+@include screen(601px, 800px) {
+	.titleContainer {
+		width: 95%;
+		#title {
+			margin-top: -70px;
+			margin-bottom: -10px;
+		}
+		#bottomline {
+			margin-top: -66px;
+		}
+	}
+}
+
+@include screen(801px, 1100px) {
+	.titleContainer {
+		width: 80%;
+		#bottomdecor {
+		}
+	}
+
 }
 
 /*-----  End of MEDIA QUERIES  ------*/

@@ -3444,6 +3444,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/build\/scss\/custom-scss\/molecules\/_fonts.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/scss\/custom-scss\/molecules\/_fonts.scss",
+		"outputAbbreviatedPath": "\/dist\/css\/_fonts.min.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/build\/scss\/custom-scss\/molecules\/_layout.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -3548,6 +3564,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/build\/views\/pages\/index.jade",
 		"outputAbbreviatedPath": "\/dist\/index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/build\/views\/svgs\/bottomdecor.jade": {
+		"compileDebug": 0,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/views\/svgs\/bottomdecor.jade",
+		"outputAbbreviatedPath": "\/dist\/bottomdecor.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
