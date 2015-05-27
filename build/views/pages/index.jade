@@ -5,25 +5,52 @@ block head
 block content
 	// BEGIN PAGE CONTAINER
 	.content
-		.titleContainer
-			include ../svgs/topline
-			include ../svgs/title
-			include ../svgs/bottomline
-			include ../svgs/bottomdecor
-		.container
-			.row#contentAnimation
-				.col-md-4.animation.text-center
-					p.proxima Lorem ipsum dolor sit amet, consectetur adipisicing elit. In soluta explicabo maxime perferendis omnis distinctio, porro dolorum ipsum consequatur perspiciatis ab consectetur beatae reiciendis fugit eius. Nobis, ipsam veritatis culpa.
-				.col-md-4.animation.text-center
-					p.proxima Lorem ipsum dolor sit amet, consectetur adipisicing elit. In soluta explicabo maxime perferendis omnis distinctio, porro dolorum ipsum consequatur perspiciatis ab consectetur beatae reiciendis fugit eius. Nobis, ipsam veritatis culpa.
-				.col-md-4.animation.text-center
-					p.proxima Lorem ipsum dolor sit amet, consectetur adipisicing elit. In soluta explicabo maxime perferendis omnis distinctio, porro dolorum ipsum consequatur perspiciatis ab consectetur beatae reiciendis fugit eius. Nobis, ipsam veritatis culpa.
-			.row.m-t-20#placeAnimation
-				.col-sm-10.col-sm-push-1.text-center.animation
-					h5.text-uppercase.proxima SACRED MATRIMONY
-					br
-					| Saturday, June 6, 2015. 13:00-15:00 WIB
-					h3.proxima.no-margin-top.no-margin-bottom.text-light St. Albertus Church
-					p.proxima JL. Boulevard, Kota Mandiri Harapan Indah Kavling 23, Bekasi, Jawa Barat.
-					br
-					img(src='images/general-divider.png')
+		// first layer
+		#firstLayer.layer
+			.container
+				.row
+					.col-sm-12
+						.text-center
+							h1.proxima Scene 01
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed laborum consectetur rem vero recusandae earum quos porro voluptas modi, velit alias beatae, minima aperiam omnis necessitatibus quia aut nihil at!
+
+		#secondLayer.layer
+			.titleContainer
+				include ../svgs/topline
+				include ../svgs/title
+				include ../svgs/bottomline
+				include ../svgs/bottomdecor
+
+		// third layer
+		#thirdLayer.layer
+			.container
+				.row#contentAnimation
+					.col-md-4.text-center.contentLeft
+						p.proxima Lorem ipsum dolor sit amet, consectetur adipisicing elit. In soluta explicabo maxime perferendis omnis distinctio, porro dolorum ipsum consequatur perspiciatis ab consectetur beatae reiciendis fugit eius. Nobis, ipsam veritatis culpa.
+					.col-md-4.text-center.contentCenter
+						h1.proxima Scene 03
+						#weddingScene
+							p.proxima Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quisquam non, facere aut vitae ipsam, adipisci optio error accusamus nam, nisi sit, libero. Deserunt labore, amet sed architecto distinctio quia.
+							//- .ellipseBackground
+							//- 	.ellipse01
+							//- 		svg#ellipse01(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", width="193px", height="193px", viewbox="0 0 193 193", enable-background="new 0 0 193 193", xml:space="preserve")
+							//- 			circle(fill-rule="evenodd", clip-rule="evenodd", fill="#636463", cx="96.5", cy="96.5", r="96.5")
+							//- 	.ellipse00
+							//- 		svg#ellipse00(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", width="174px", height="174px", viewbox="0 0 174 174", enable-background="new 0 0 174 174", xml:space="preserve")
+							//- 			circle(fill-rule="evenodd", clip-rule="evenodd", fill="#D6D6D5", cx="87", cy="87", r="87")
+					.col-md-4.text-center.contentRight
+						p.proxima Lorem ipsum dolor sit amet, consectetur adipisicing elit. In soluta explicabo maxime perferendis omnis distinctio, porro dolorum ipsum consequatur perspiciatis ab consectetur beatae reiciendis fugit eius. Nobis, ipsam veritatis culpa.
+
+		// fourth layer
+		#fourthLayer.layer
+			.container
+				.row.m-t-20#placeAnimation
+					.col-sm-10.col-sm-push-1.text-center
+						h1.proxima Scene 04
+						h5.text-uppercase.proxima SACRED MATRIMONY
+						br
+						| Saturday, June 6, 2015. 13:00-15:00 WIB
+						h3.proxima.no-margin-top.no-margin-bottom.text-light St. Albertus Church
+						p.proxima JL. Boulevard, Kota Mandiri Harapan Indah Kavling 23, Bekasi, Jawa Barat.
+						br
+						img(src='images/general-divider.png')

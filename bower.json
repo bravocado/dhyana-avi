@@ -12,6 +12,6 @@
     "gerobak": "~0.1.5",
     "classie": "~1.0.1",
     "sass-mediaqueries": "~1.5.1",
-    "vivus": "~0.2.1"
+    "scrollmagic": "~2.0.5"
   }
 }

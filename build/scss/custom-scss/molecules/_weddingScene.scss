@@ -1,0 +1,13 @@
+#weddingScene {
+	.ellipseBackground {
+		width: 100%;
+		height: 110px;
+		position: relative;
+		.ellipse00,.ellipse01 {
+			position: absolute;
+			bottom: 0; top: auto; left: 0; right: 0;
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
