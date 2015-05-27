@@ -187,7 +187,6 @@ $(document).ready(function() {
 	.setTween(titleAnimation)
 	.on("enter leave", function (event) {
 			console.log("Scene change.");
-			callback;
 		});
 	;
 
