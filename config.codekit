@@ -3639,6 +3639,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/build\/scss\/custom-scss\/molecules\/_scene01.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/scss\/custom-scss\/molecules\/_scene01.scss",
+		"outputAbbreviatedPath": "\/dist\/css\/_scene01.min.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/build\/scss\/custom-scss\/molecules\/_svgs.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -3836,6 +3852,105 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/dist\/images\/avi-and-lily.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32918,
+		"inputAbbreviatedPath": "\/dist\/images\/avi-and-lily.png",
+		"outputAbbreviatedPath": "\/dist\/images\/avi-and-lily.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/avi-head.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4044,
+		"inputAbbreviatedPath": "\/dist\/images\/avi-head.png",
+		"outputAbbreviatedPath": "\/dist\/images\/avi-head.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/bottom-arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 257,
+		"inputAbbreviatedPath": "\/dist\/images\/bottom-arrow.png",
+		"outputAbbreviatedPath": "\/dist\/images\/bottom-arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/content-left-content-01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11559,
+		"inputAbbreviatedPath": "\/dist\/images\/content-left-content-01.png",
+		"outputAbbreviatedPath": "\/dist\/images\/content-left-content-01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/content-left-content-02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7056,
+		"inputAbbreviatedPath": "\/dist\/images\/content-left-content-02.png",
+		"outputAbbreviatedPath": "\/dist\/images\/content-left-content-02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/content-left-content-03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8047,
+		"inputAbbreviatedPath": "\/dist\/images\/content-left-content-03.png",
+		"outputAbbreviatedPath": "\/dist\/images\/content-left-content-03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/content-right-content-01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11839,
+		"inputAbbreviatedPath": "\/dist\/images\/content-right-content-01.png",
+		"outputAbbreviatedPath": "\/dist\/images\/content-right-content-01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/content-right-content-02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6676,
+		"inputAbbreviatedPath": "\/dist\/images\/content-right-content-02.png",
+		"outputAbbreviatedPath": "\/dist\/images\/content-right-content-02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/content-right-content-03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7627,
+		"inputAbbreviatedPath": "\/dist\/images\/content-right-content-03.png",
+		"outputAbbreviatedPath": "\/dist\/images\/content-right-content-03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/dist\/images\/general-divider.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3876,6 +3991,39 @@
 		"initialSize": 6980,
 		"inputAbbreviatedPath": "\/dist\/images\/ico\/ms-touch-icon-144x144-precomposed.png",
 		"outputAbbreviatedPath": "\/dist\/images\/ico\/ms-touch-icon-144x144-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/lily-head.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5263,
+		"inputAbbreviatedPath": "\/dist\/images\/lily-head.png",
+		"outputAbbreviatedPath": "\/dist\/images\/lily-head.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/we-dance.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14150,
+		"inputAbbreviatedPath": "\/dist\/images\/we-dance.png",
+		"outputAbbreviatedPath": "\/dist\/images\/we-dance.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/images\/we-eat.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14822,
+		"inputAbbreviatedPath": "\/dist\/images\/we-eat.png",
+		"outputAbbreviatedPath": "\/dist\/images\/we-eat.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

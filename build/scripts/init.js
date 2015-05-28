@@ -23,24 +23,28 @@ $.fn.exists = function(callback) {
 
 $(document).ready(function() {
 
+	/*==========  FADEIN CONTENT  ==========*/
 	var content = $('.content');
 	content.fadeIn();
 
-	/*==========  ANIMATOR  ==========*/
-
-
+	/*==========  GLOBAL VARS  ==========*/
 	var
 		vh = window.innerHeight
 		,titleContainer = $('.titleContainer')
 		,titlePath = $('.titleContainer path')
 	;
 
+	/*==========  SVG PATH DETECT  ==========*/
 	titlePath.each(function(i, e) {
 		e.style.strokeDasharray = e.style.strokeDashoffset = e.getTotalLength();
 	});
 
+	/*==========  DEBUG FUNCTION  ==========*/
 	function consolelog() {
 		console.log('callback added!');
+	}
+	function callback (event) {
+		console.log("Event fired! (" + event.type + ")");
 	}
 
 	// var tn1 to use stagger mode
@@ -55,22 +59,104 @@ $(document).ready(function() {
 		//placeTimeline.play(0);
 	//}
 
+	/*==========  ADJUST HEIGHT ON LAYER  ==========*/
 	$('.layer').each(function(){
-		$(this).css('height', vh);
+		if($(this).hasClass('adjustHeight')) {
+			$(this).css('height', vh);
+		}
 	});
 
-	function callback (event) {
-		console.log("Event fired! (" + event.type + ")");
+
+	/*==========  ANIMATION USING FUNCTION  ==========*/
+	function arrowShow(){
+		TweenLite.fromTo('.bottom-arrow', 1, {
+			autoAlpha:0,
+			bottom: -200
+		}, {
+			autoAlpha:1,
+			bottom: 0,
+			delay: 1,
+			ease:Back.easeOut
+		});
 	}
 
-	// init ScrollMagic Controller
-	var controller = new ScrollMagic.Controller(
-		{
-			// globalSceneOptions: {
-			// 	triggerHook: 'onLeave'
-			// }
-		}
-	);
+	function arrowHide(){
+		TweenLite.fromTo('.bottom-arrow', 1, {
+			autoAlpha:1,
+			bottom: 0
+		}, {
+			autoAlpha:0,
+			bottom: 200,
+			delay: 1,
+			ease:Back.easeOut
+		});
+	}
+
+	function aviAndLilyShow() {
+		console.log('avi and lily show');
+		// var contentAnimation = new TimelineMax({pause:true});
+		// contentAnimation.add([
+		// 	TweenLite.fromTo('.contentLeft', 1, {
+		// 		autoAlpha:0
+		// 	}, {
+		// 		autoAlpha:1,
+		// 		delay: 1,
+		// 		ease:Back.easeOut
+		// 	}),
+		// 	TweenLite.fromTo('#weddingScene', 1, {
+		// 		autoAlpha: 0,
+		// 		rotationX:90,
+		// 		transformOrigin:"center bottom"
+		// 	}, {
+		// 		autoAlpha: 1,
+		// 		delay: 1.5,
+		// 		rotationX:0,
+		// 		transformOrigin:"center bottom",
+		// 		ease:Back.easeOut
+		// 	}),
+		// 	TweenLite.fromTo('.contentRight', 1, {
+		// 		autoAlpha:0
+		// 	}, {
+		// 		autoAlpha:1,
+		// 		delay: 1.2,
+		// 		ease:Back.easeOut
+		// 	}),
+		// ]);
+	}
+
+
+	/*==========  ANIMATION USING VARS  ==========*/
+	//helloworld animation
+	var helloFromUs = new TimelineMax();
+	helloFromUs.add([
+		TweenLite.fromTo('.bottom-arrow', 1, {
+			autoAlpha:0,
+			bottom: -200
+		}, {
+			autoAlpha:1,
+			bottom: 0,
+			delay: 1,
+			ease:Back.easeOut
+		}),
+		TweenLite.fromTo('.helloFromUs', 1, {
+			autoAlpha:0,
+			top: 300
+		}, {
+			autoAlpha:1,
+			top: 0,
+			delay: 1.2,
+			ease:Back.easeOut
+		}),
+		TweenLite.fromTo('.helloMsg', 1, {
+			autoAlpha:0,
+			top: 300
+		}, {
+			autoAlpha:1,
+			top: 0,
+			delay: 1.3,
+			ease:Back.easeOut
+		}),
+	]);
 
 	// title animation
 	var titleAnimation = new TimelineMax();
@@ -139,55 +225,100 @@ $(document).ready(function() {
 			fillOpacity: 1,
 		}),
 	]);
+	titleAnimation.eventCallback("onComplete", aviAndLilyShow);
 
 	// content animation
 	var contentAnimation = new TimelineMax();
 	contentAnimation.add([
-		TweenLite.fromTo('.contentLeft', 1, {
-			autoAlpha:0
+		TweenLite.fromTo('#weddingScene', 1, {
+			autoAlpha: 0,
+			rotationX:90,
+			transformOrigin:"center bottom"
 		}, {
-			autoAlpha:1,
-			delay: 1,
+			autoAlpha: 1,
+			delay: 1.5,
+			rotationX:0,
+			transformOrigin:"center bottom",
 			ease:Back.easeOut
 		}),
-		TweenLite.fromTo('.contentCenter', 1, {
-			autoAlpha:0
+	]);
+
+	var contentAnimation2 = new TimelineMax();
+	contentAnimation2.add([
+		TweenMax.staggerFromTo(".contentLeft img", 0.7,{
+			opacity: 0,
+			bottom: -100 
 		}, {
-			autoAlpha:1,
-			delay: 1.1,
-			ease:Back.easeOut
-		}),
-		TweenLite.fromTo('.contentRight', 1, {
-			autoAlpha:0
+			opacity: 1,
+			bottom: 0,
+			delay:0.5,
+			ease:Back.easeOut,
+			visibility: 'visible'
+		}, 1),
+		TweenMax.staggerFromTo(".contentRight img", 0.7,{
+			opacity: 0,
+			bottom: -100 
 		}, {
-			autoAlpha:1,
-			delay: 1.2,
-			ease:Back.easeOut
-		}),
+			opacity: 1,
+			bottom: 0,
+			delay:0.5,
+			ease:Back.easeOut,
+			visibility: 'visible'
+		}, 1),
 	]);
 
 	var placeAnimation = new TimelineMax();
 	placeAnimation.add([
 		TweenLite.fromTo('#placeAnimation', 1,{
-			autoAlpha:0
+			autoAlpha: 0,
+			rotationX:90,
+			transformOrigin:"center bottom"
 		}, {
-			autoAlpha:1,
+			autoAlpha: 1,
 			delay: 0.5,
-			ease:Back.easeOut
+			rotationX:0,
+			transformOrigin:"center bottom",
+			ease:Bounce.easeOut
 		})
 	]);
+
+	
+	/*==========  ANIMATOR/SCENES  ==========*/
+	// init ScrollMagic Controller
+	var controller = new ScrollMagic.Controller(
+		{
+			// globalSceneOptions: {
+			// 	triggerHook: 'onLeave'
+			// }
+		}
+	);
+
+	var scene1 = new ScrollMagic.Scene({
+		triggerHook: 0,
+		triggerElement: '#firstLayer',
+		duration: 0
+	})
+	.addTo(controller)
+	.setTween(helloFromUs)
+	;
 
 	var scene2 = new ScrollMagic.Scene({
 		triggerHook: 0,
 		triggerElement: '#secondLayer',
-		offset: -200,
+		offset: -250,
 		duration: 0
 	})
 	.addTo(controller)
 	.setTween(titleAnimation)
-	.on("enter leave", function (event) {
-			console.log("Scene change.");
-		});
+	// .on("enter leave", function (event) {
+	// 		console.log("Scene change.");
+	// })
+	.on("leave", function(){
+		arrowShow();
+	})
+	.on("enter", function(){
+		arrowHide();
+	});
 	;
 
 	var scene3 = new ScrollMagic.Scene({
@@ -201,6 +332,14 @@ $(document).ready(function() {
 	var scene4 = new ScrollMagic.Scene({
 		triggerHook: 'onEnter',
 		triggerElement: '#fourthLayer',
+		duration: 0
+	})
+	.setTween(contentAnimation2)
+	.addTo(controller);
+
+	var scene5 = new ScrollMagic.Scene({
+		triggerHook: 'onEnter',
+		triggerElement: '#fifthLayer',
 		duration: 0
 	})
 	.setTween(placeAnimation)

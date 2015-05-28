@@ -1,13 +1,39 @@
 #weddingScene {
-	.ellipseBackground {
-		width: 100%;
-		height: 110px;
+	position: relative;
+	margin-bottom: 20vh;
+	img {
+		max-width: 100%;
+	}
+}
+#contentAnimation {
+	.contentLeft,
+	.contentRight,
+	#weddingScene {
 		position: relative;
-		.ellipse00,.ellipse01 {
-			position: absolute;
-			bottom: 0; top: auto; left: 0; right: 0;
-			width: 100%;
+		visibility: hidden;
+	}
+	.contentLeft,
+	.contentRight {
+		text-align: center;
+		img {
+			width: 50%;
 			margin: 0 auto;
+			position: relative;
+		}
+	}
+}
+
+#placeAnimation {
+	padding-top: 33vh;
+}
+
+@include max-screen(600px) {
+	#contentAnimation {
+		.contentLeft,
+		.contentRight {
+			img {
+				width: 90%;
+			}
 		}
 	}
 }

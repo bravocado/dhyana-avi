@@ -1,0 +1,29 @@
+.helloWorld {
+	padding-top: 40vh;
+	position: relative;
+	.helloFromUs {
+		margin: 0; padding: 0;
+		display: table;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		li {
+			display: inline-table;
+			vertical-align: middle;
+			list-style: none;
+		}
+	}
+	.helloMsg {
+		position: relative;
+		color: #9a9797;
+		text-align: center;
+	}
+}
+
+.bottom-arrow {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+}
